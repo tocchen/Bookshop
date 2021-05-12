@@ -1,0 +1,56 @@
+#name{
+    font-size: 48px;
+    font-family:"LiSu",隶书,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    margin-right: 40px;
+    margin: 40px 0px 0px 600px;
+    font-weight: bold;
+    color: #000;
+}
+#findorder{
+    margin: 20px auto auto 60px;
+}
+#orderform{
+    background-color: #ffffff;
+    width: 98%;
+    margin: 20px auto 20px auto;
+    padding-bottom: 20px;
+}
+.headvalue{
+    /* padding: 20px auto; */
+    width: 95%;
+    height: 40px;
+    margin: 25px auto;
+}
+.th{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei",微软雅黑;
+    color: rgb(60, 60, 60);
+}
+#box{
+    margin-left: 1.5%;
+    border: rgb(138, 134, 134) ;
+}
+
+#Date{
+    margin-left: 1%;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+#orderid{
+     margin-left: 1%;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+.formvalue{
+    width: 25%;
+}
+.othervalue{
+    width: 15%;
+    text-align: center;
+    font-size: 15px;
+}
+.image{
+    margin-left: 30px;
+}

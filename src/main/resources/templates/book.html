@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShidaBookStore\购买</title>
+<link rel="stylesheet" href="/font/iconfont.css" >
+<link rel="stylesheet" href="/css/reset.css" >
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/bookvalue.css" >
+<script type="text/javascript" src="/js/head.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="header-in">
+        <div class="header-top">
+            <h1 class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+
+            <div class="search">
+                <form action="" class="clearfix">
+                    <input type="text" class="fl" placeholder="">
+                    <input type="submit" class="fl" value="搜索">
+                    <i class="iconfont icon-sousuo"></i>
+                </form>
+            </div>
+            <div id="table">
+                <table th:each="b : ${book}">
+                    <!-- 图片+书名+作者 -->>
+                    <tr>
+                        <td rowspan="4"><img th:src="${b.getBookImg()}"></td>
+                        <td>
+                            <span th:text="${b.getBookName()}"></span>
+                            <span th:text="${b.getBookAuthor()}"></span>
+                        </td>
+                    </tr>
+                    <!-- 价格-->
+                    <tr>
+                        <td>
+                            <span th:text="${b.getBookPrice()}"></span>
+                        </td>
+                    </tr>
+                    <!-- 提交 -->
+                    <tr>
+                    </tr>
+                    <!--简介-->
+                    <tr>
+                    </tr>
+
+                </table>
+            </div>
+</body>
+</html>
